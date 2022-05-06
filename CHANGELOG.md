@@ -1,5 +1,13 @@
 # toml4j Changelog
 
+## 0.7.3 / 2022-05-05
+
+## Updated
+* Added SeriaizedName annotation support
+* Add proper indentation for array types
+* Append object fields instead of overwriting the whole file
+
+
 ## 0.7.2 / 2017-08-05
 
 ## Updated
