@@ -1,10 +1,6 @@
-# toml4j
+# toml4j [![Build Status](https://ci.plex.us.org/job/toml4j/badge/icon)](https://ci.plex.us.org/job/toml4j/)
 
 toml4j is a [TOML 0.4.0](https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.4.0.md) parser for Java.
-
-[//]: # ([![Maven Central]&#40;https://img.shields.io/maven-central/v/com.moandjiezana.toml/toml4j.svg&#41;]&#40;https://search.maven.org/#search|gav|1|g%3A%22com.moandjiezana.toml%22%20AND%20a%3A%22toml4j%22&#41; [![License: MIT]&#40;https://img.shields.io/badge/license-MIT-blue.svg&#41;]&#40;LICENSE&#41; [![Build Status]&#40;https://travis-ci.org/mwanji/toml4j.svg&#41;]&#40;https://travis-ci.org/mwanji/toml4j&#41; [![Coverage Status]&#40;https://coveralls.io/repos/mwanji/toml4j/badge.svg&#41;]&#40;https://coveralls.io/r/mwanji/toml4j&#41; [![Dependency Status]&#40;https://www.versioneye.com/user/projects/558bc2bc653232001e000001/badge.svg?style=flat&#41;]&#40;https://www.versioneye.com/user/projects/558bc2bc653232001e000001&#41;)
-
-[//]: # (For the bleeding-edge version integrating the latest specs, see the [work-in-progress branch]&#40;https://github.com/mwanji/toml4j/tree/wip&#41;.)
 
 ## Installation
 
