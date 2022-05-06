@@ -1,5 +1,6 @@
 plugins {
     java
+    `maven-publish`
 }
 
 group = "dev.plex"
@@ -11,6 +12,23 @@ repositories {
 
 dependencies {
     implementation("com.google.code.gson:gson:2.9.0")
-    implementation("org.projectlombok:lombok:1.18.22")
-    annotationProcessor("org.projectlombok:lombok:1.18.22")
+    implementation("org.projectlombok:lombok:1.18.24")
+    implementation("org.jetbrains:annotations:23.0.0")
+    annotationProcessor("org.projectlombok:lombok:1.18.24")
+}
+
+publishing {
+    publications {
+        repositories {
+            maven {
+                val releasesRepoUrl = uri("https://nexus.telesphoreo.me/repository/plex-releases")
+                val snapshotsRepoUrl = uri("https://nexus.telesphoreo.me/repository/plex-snapshots")
+                url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl)
+                credentials {
+                    username = System.getenv("plexUser")
+                    password = System.getenv("plexPassword")
+                }
+            }
+        }
+    }
 }

@@ -18,15 +18,18 @@ Add the following dependency to your POM (or equivalent for other dependency man
 </dependency>
 ```
 
-If you use gradle, you can use the following code :
+If you use Gradle, you can use the following code:
 ```gradle
 repositories {
   mavenCentral()
+  maven {
+      url = uri("https://nexus.telesphoreo.me/repository/totalfreedom/")
+  }
 }
 
 dependencies {
   ...
-  implementation 'dev.plex:toml4j:0.7.3'
+  implementation("dev.plex:toml4j:0.7.3")
 }
 ```
 
