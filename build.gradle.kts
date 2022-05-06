@@ -19,6 +19,9 @@ dependencies {
 
 publishing {
     publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
         repositories {
             maven {
                 val releasesRepoUrl = uri("https://nexus.telesphoreo.me/repository/plex-releases")
